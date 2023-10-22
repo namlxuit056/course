@@ -1,0 +1,83 @@
+/* Đảm bảo main nằm ở giữa trang và có chiều cao tối thiểu là 100% chiều cao của viewport */
+.main {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    min-height: 100vh;
+    /* Chiều cao tối thiểu là 100% chiều cao của viewport */
+}
+
+/* Đảm bảo form luôn điền hoàn toàn vào phần nội dung và không tràn ra ngoài */
+.form {
+    width: 100%;
+    /* Chiều rộng tối đa, để form điền hết không gian */
+    max-width: 600px;
+    /* Giới hạn chiều rộng tối đa để tránh tràn ra ngoài */
+    height: auto;
+    /* Chiều cao tự động, phù hợp với nội dung */
+    display: flex;
+    /* Hiển thị các phần tử con theo chiều dọc */
+    align-items: center;
+    /* Căn giữa theo chiều ngang */
+    padding: 15px;
+    /* Khoảng cách từ viền đến nội dung */
+    margin: 20px;
+    /* Khoảng cách giữa form và main */
+}
+
+/* Đảm bảo hình ảnh logo không bị biến dạng và lấp đầy khung hình */
+.form__logo img {
+    width: 100%;
+    /* Làm cho hình ảnh lấp đầy khung hình */
+    max-height: 100%;
+    /* Đảm bảo không bị biến dạng */
+}
+
+/* Đảm bảo các ô input lấp đầy 100% chiều rộng của form và có khoảng cách phía dưới */
+.form__input {
+    padding: 10px;
+    /* Khoảng cách từ viền đến nội dung trong input */
+    width: 100%;
+    /* Lấp đầy 100% chiều rộng của form */
+    margin-bottom: 10px;
+    /* Khoảng cách phía dưới mỗi ô input */
+    box-sizing: border-box;
+    /* Kích thước tính cả border và padding */
+}
+
+/* Đảm bảo form__content lấp đầy toàn bộ chiều rộng và hiển thị các phần tử con theo chiều dọc */
+.form__content {
+    width: 100%;
+    /* Lấp đầy 100% chiều rộng của form */
+    display: flex;
+    flex-direction: column;
+    /* Hiển thị các phần tử con theo chiều dọc */
+    padding: 15px;
+    /* Khoảng cách từ viền đến nội dung */
+}
+
+/* Đảm bảo các input__username có khoảng cách phía dưới */
+.input__username {
+    margin-bottom: 10px;
+    /* Khoảng cách phía dưới mỗi input__username */
+}
+
+/* Đảm bảo form__button có khoảng cách phía trên và điền toàn bộ chiều rộng của form */
+.form__button {
+    margin-top: 10px;
+    /* Khoảng cách phía trên button */
+    padding: 10px;
+    /* Khoảng cách từ nội dung đến viền của button */
+    width: 100%;
+    /* Lấp đầy toàn bộ chiều rộng của form */
+    color: white;
+    /* Màu chữ là trắng */
+    font-weight: 500;
+    /* Độ đậm của chữ */
+    font-size: 20px;
+    /* Cỡ chữ */
+    background-color: rgb(0, 0, 0);
+    /* Màu nền của button */
+}

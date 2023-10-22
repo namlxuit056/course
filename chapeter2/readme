@@ -1,0 +1,23 @@
+overflow: hidden;: Thuộc tính này được sử dụng để đảm bảo rằng bất kỳ nội dung nào vượt ra khỏi khung của tiêu đề h1 sẽ bị ẩn đi (bị ẩn).
+
+text-align: center;: Thuộc tính này được sử dụng để căn giữa văn bản trong tiêu đề h1 theo chiều ngang.
+
+h1:before và h1:after: Đây là các pseudo-elements (::before và ::after) được sử dụng để tạo hai thanh ngang (gạch chân) ở dưới và trên tiêu đề h1.
+
+background-color: #000;: Đây là màu nền của các thanh ngang, trong trường hợp này, màu đen (#000).
+
+content: "";: Thuộc tính này được sử dụng để thêm nội dung ảo vào các pseudo-elements (::before và ::after). Trong trường hợp này, nó được đặt thành chuỗi rỗng, vì chúng ta chỉ muốn tạo các thanh ngang mà không có nội dung thực sự.
+
+display: inline-block;: Thuộc tính này được sử dụng để đặt các pseudo-elements thành hiển thị dạng "inline-block", cho phép chúng có kích thước và vị trí tương tự như các phần tử văn bản.
+
+height: 1px;: Đây là chiều cao của thanh ngang, được đặt thành 1 pixel.
+
+position: relative;: Thuộc tính này được sử dụng để xác định vị trí của các pseudo-elements trong liên quan đến tiêu đề h1.
+
+vertical-align: middle;: Thuộc tính này được sử dụng để căn giữa các pseudo-elements theo chiều dọc, để chúng nằm ở giữa tiêu đề.
+
+width: 50%;: Đây là chiều rộng của thanh ngang, được đặt thành 50% để chúng chiếm một nửa chiều rộng của tiêu đề h1.
+
+h1:before: Thuộc tính right: 0.5em; và margin-left: -50%; được sử dụng để đặt pseudo-element trước (gạch chân trên) sao cho nó nằm bên phải của tiêu đề và căn giữa.
+
+h1:after: Thuộc tính left: 0.5em; và margin-right: -50%; được sử dụng để đặt pseudo-element sau (gạch chân dưới) sao cho nó nằm bên trái của tiêu đề và căn giữa.
