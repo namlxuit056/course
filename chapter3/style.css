@@ -7,12 +7,14 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    width: fit-content;
     justify-content: space-around;
  }
 .task__head--avatar {
     position: relative;
     width: 50px;
     height: 50px;
+    background-color: blue;
 }
 .avatar {
     vertical-align: middle;
@@ -20,12 +22,13 @@
     height: 50px;
     border-radius: 50%;
     position: absolute;
+
 }
 
 .number {
-    display: inline-block;
+    /* display: inline-block; */
     border: 1px solid;
-    background-color: black;
+    background-color: red;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
@@ -34,6 +37,7 @@
     top: 0;
     left: 0;
 }
+/* z-index:0; */
 
 .avatar1 {
     margin-left: -10px;
@@ -43,7 +47,7 @@
 
 .avatar2 {
     margin-left: -20px;
-    z-index: 2;
+    /* z-index: 2; */
     top:0;
     left:100px;
 }
@@ -60,7 +64,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
  }
 
 
@@ -69,7 +72,6 @@
     height: 24px;
     color: white;
     cursor: pointer;
-
 }
  
 
