@@ -1,0 +1,14 @@
+<!DOCTYPE python>
+import math
+
+rho = 1.225  # kg/m^3
+Cd = 0.3  # Hệ số cản không khí của xe (ví dụ)
+A = 2.0  # Diện tích tiết diện của xe (m^2) (ví dụ)
+g = 9.81  # gia tốc vị trí (m/s^2)
+
+for theta in range(0, 51, 10):
+    theta_rad = math.radians(theta)
+    v_kmph = 60  # Tốc độ xe (km/h) (ví dụ)
+    v_ms = (v_kmph * 5) / 18  # Chuyển đổi tốc độ xe từ km/h sang m/s
+    Fc = 0.5 * rho * Cd * A * v_ms**2 * math.cos(theta_rad)
+    print(f"Theta: {theta} degrees, Fc: {Fc} N")
