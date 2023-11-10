@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <!-- Phan Dau -->
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com">
+    </head>
+    <!-- Phan than -->
+    <body>
+        <div class="form_img">
+            <img src="anhweb.jpg" />
+        </div>
+        <h2>Login</h2>
+        <div class="Login">
+                <div class="form-email">
+                    <label for="email"><b>Email address</b></label><br>
+                    <input type="text" id="email" placeholder="Input your email" name="uname" required>
+                </div>
+                <div class="form-pass">
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" id="psw" placeholder="Input your password" name="psw" required>
+                    
+                </div>
+                <div class="remember">
+                    <label> <input type="checkbox">Remember Password</label>
+                </div>
+                <div class="form-log">
+                    <button>Login</button>
+                </div>                     
+                <div class="form-sign">
+                    <h3>
+                    Don't have an account?
+                    <a href="register.html">Sign up</a>
+                    </h3>
+                    <hr> 
+                    <script src="https://accounts.google.com/gsi/client" async></script>
+                    <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID" data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin" data-theme="outline" data-text="Authorize_with_Google" data-shape="rectangular" data-logo_alignment="left">
+                    </div>              
+                </div>
+        </div>    
+        
+    </body>
+</html>           
+                
