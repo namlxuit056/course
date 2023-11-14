@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.box {
+    background-color: rgb(180, 16, 178);
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.avatar1 {
+    z-index: 4;
+    top: 12%;
+    left: 12%;
+}
+
+.avatar2 {
+    z-index: 3;
+    top: 12%;
+    left: 20%;
+}
+
+.avatar3 {
+    z-index: 2;
+    top: 12%;
+    left: 28%;
+}
+
+.menu {
+    position: absolute;
+    top: 15%;
+    right:10%;
+    font-size: 30px;
+    color: white;
+}
+
+.task-title {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    font-size: 30px;
+    color: white;
+}
+.task {
+    position: absolute;
+    top: 80%;
+    font-size: 30px;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    color: white;
+}
+
+.progress {
+    position: absolute;
+    top: 88%;
+    font-size: 30px;
+    left: 20%;
+    transform: translate(-10%, -50%);
+
+}
