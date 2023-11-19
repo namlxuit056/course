@@ -1,0 +1,151 @@
+.container {
+    display: flex;
+    height: 100%;
+    width: 900px;
+    background-color: rgb(240, 240, 240);
+    flex-direction: row; 
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 20px; 
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 200px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: rgb(62, 3, 62);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar-fill {
+    height: 10px;
+    width: 96%; 
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .profile-pic {
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: 10px;
+    top: -10px;
+    z-index: 3;
+  }
+  
+  
+  .profile-pic-2 {
+    left: -20px;
+    z-index: 2;
+  }
+  
+  .profile-pic-3 {
+    left: -40px;
+    z-index: 1;
+  }
+  .menu-icon {
+    position: relative; 
+    top: 20px; 
+    right: 10px; 
+    left: 180px;  
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 3px 0;
+  }
+.card4 {
+    display: flex;
+    background-color:rgb(240, 240, 240);
+    color: rgb(76, 7, 76);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+/* .item5 {
+    display: flex;
+    width: 20%;
+    height: 100px;
+    background-color: blue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.item6 {
+    display: flex;
+    width: 20%;
+    height: 100px;
+    background-color: blue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+} */
+.purple {
+    background-color: purple;
+    height: 100%;
+    width: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.orange {
+    background-color: orange;
+    height: 100%;
+    width: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.blue {
+    background-color: rgb(159, 202, 224);
+    height: 100%;
+    width: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.white {
+    background-color: white;
+    flex-direction: column-reverse;
+    height: 20%;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+.card5 {
+  display: flex;
+  background-color:rgb(180, 51, 51);
+  color: rgb(76, 7, 76);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  width: 400px;
+  height: 400px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
