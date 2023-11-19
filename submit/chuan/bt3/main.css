@@ -158,7 +158,8 @@ body {
 }
 .white2 {
   display: flex;
-  align-self: center;
+  /* align-self: center; */
+  align-items:center ;
   background-color: white;
   height: 35px;
   width: 35px;
