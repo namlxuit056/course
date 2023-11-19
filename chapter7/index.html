@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<!-- js -->
+
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+
+                <div class="controls">
+                    <label>
+                        Justify content value
+                        <select id="switcher">
+                            <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                            <option value="center">center</option>
+                            <option value="space-around">space-around</option>
+                            <option value="space-between">space-between</option>
+                            <option value="space-evenly">space-evenly</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="container" id="container">
+                    <div class="box box1">Item one</div>
+                    <div class="box">Item two</div>
+                    <div id="box3" class="box box3">Item three</div>
+                    <!-- <div class="box">Item 4</div>
+                    <div class="box">Item 4</div>
+                    <div class="box">Item 4</div> -->
+                </div>
+                <p id="result"></p>
+                <!-- <div class="container2" id="container">
+                    <div class="box">Item one</div>
+                    <div class="box">Item two</div>
+                    <div class="box">Item three</div>
+                </div> -->
+            </article>
+        </div>
+    </main>
+</body>
+<script>
+    const switcher = document.getElementById("switcher");
+    const container = document.querySelector(".container");
+
+    switcher.addEventListener("change", (evt) =>
+    {
+        container.style.justifyContent = evt.target.value;
+    });
+    const box3 = document.getElementById("box3");
+    console.log(box3);
+    box3.innerHTML = "Text 4";
+    box3.addEventListener(('click'), (e) =>
+    {
+        console.log(e.target.value);
+        box3.innerHTML = "Clicked";
+        const result = document.getElementById("result");
+        result.innerHTML = "Xin Chao ";
+    })
+
+
+</script>
+
+</html>
