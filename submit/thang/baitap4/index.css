@@ -4,15 +4,14 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(238, 238, 238);
 }
 
 .header-bar {
     position: relative;
     max-width: 100%;
     height: 70px;
-    background-color: white;
-    border: 1px solid gray;
+    background-color: rgb(238, 238, 238);
     border-radius: 5px;
     margin-left: 20em;
     margin-right: 20em;
@@ -28,7 +27,7 @@ body {
 
 .search-icon {
     position: absolute;
-    left: 70%;
+    right: 21%;
     font-size: 18px;
     top: 50%;
     transform: translateY(-50%);
@@ -43,7 +42,7 @@ body {
 
 .add-new-project {
     position: absolute;
-    right: 10%;
+    right: 5%;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 5px;
@@ -59,7 +58,7 @@ a.new-project {
 }
 
 .box {
-    background-color:aqua;
+    background-color: rgb(238, 238, 238);
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -168,4 +167,152 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color: white;
     border-radius: 5px;
+}
+
+.task-today-statistics {
+    display: flex;
+    margin-left: 20em;
+    margin-right: 20em;
+    max-width: 100%;   
+    margin-top: 5em; 
+    margin-bottom: 5em;
+}
+
+.task-today {
+    width: 50%;
+
+}
+
+.statistics {
+    width: 50%;
+}
+
+.task-today {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-header {
+    font-size: 25px;
+    position: relative;
+}
+
+.task-list {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.right-arrow {
+    top:50%;
+    right:20%;
+    position: absolute;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+    background-color: rgb(235, 235, 235);
+    color: gray
+}
+
+.box-task {
+    margin-top: 4em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+}
+
+.box-statistics {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px 20px;
+    margin-left: 25px;
+    margin-right: 40px;
+}
+
+.boxbox1 {
+    border: 1px solid rgb(217, 217, 217);
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    margin-left: 20px;
+    border-left-color: aqua;
+    border-left-width: 10px;
+    background-color: white;
+}
+
+.box-1-1 {
+    border-left-color: purple;
+}
+.box-1-2 {
+    border-left-color: rgb(24, 162, 187);
+}
+.box-1-3 {
+    border-left-color: rgb(240, 110, 17);
+}
+.box-1-4 {
+    border-left-color: rgb(24, 162, 187);
+}
+
+.checkbox-task {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 50%;
+}
+
+.boxbox2 {
+    background-color: white;
+    width: 150px;
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxbox3 {
+    box-sizing: border-box;
+    width: 150px;
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(190, 186, 186);
+    border-style: dashed;
+}
+
+
+.number2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text2 {
+    font-weight: bold;
+    color: rgb(190, 186, 186)
+}
+
+.plus {
+    font-size: 25px;
+    color: rgb(190, 186, 186);
+    font-weight: bold;
+}
+
+.add-widget {
+    color: rgb(190, 186, 186);
 }
