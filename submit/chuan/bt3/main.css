@@ -20,9 +20,60 @@ body {
     border-radius: 15px;
     width: 200px;
   }
-  
+  .card2 {
+    background-color: rgb(159, 202, 224);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 200px;
+  }
+  .card3 {
+    background-color: rgb(240, 120, 60);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 200px;
+  }
+  .card4 {
+    display: flex;
+    background-color:rgb(240, 240, 240);
+    color: rgb(76, 7, 76);
+    padding: 20px;
+    margin: 20px;
+    margin-left: -1px;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card5 {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    color: rgb(76, 7, 76);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card6{
+    display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+  }
   .title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -35,13 +86,26 @@ body {
     margin-top: 10px;
   }
   
-  .progress-bar-fill {
+  .progress-bar-fill1 {
     height: 10px;
     width: 96%; 
     background-color: white;
     border-radius: 10px;
   }
   
+  .progress-bar-fill2 {
+    height: 10px;
+    width: 20%; 
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .progress-bar-fill3 {
+    height: 10px;
+    width: 82%; 
+    background-color: white;
+    border-radius: 10px;
+  }
   .profile-pic {
     border-radius: 50%; 
     width: 40px;
@@ -76,91 +140,159 @@ body {
     background-color: white;
     margin: 3px 0;
   }
-.card4 {
+
+.title1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  /* flex-grow: 3; */
+}
+.title2 {
+  align-self: center;
+  margin-left: 15px;
+  flex-grow: 2;
+}
+.title3 {
+  margin-left: 15px;
+  margin-top: 20px;
+  /* flex-grow: 2; */
+  font-weight: bold;
+}
+.title4 {
+  margin-left: -142px;
+  margin-top: 45px;
+  font-size: 15px;
+  color: rgb(180, 180, 180);
+}
+.title5 {
+  margin-left: -147px;
+  margin-top: 45px;
+  font-size: 15px;
+  color: rgb(180, 180, 180);
+}
+.title6 {
+  margin-left: -180px;
+  margin-top: 45px;
+  font-size: 15px;
+  color: rgb(180, 180, 180);
+}
+.title7 {
+  margin-left: -168px;
+  margin-top: 45px;
+  font-size: 15px;
+  color: rgb(180, 180, 180);
+}
+.title8 {
+  margin-top: -2px;
+  margin-left: 12.5px;
+  font-weight: 1000;
+  color: rgb(153, 153, 153);
+}
+.title9 {
+  margin-right: 100px;
+  margin-left: -392px;
+  margin-top: 50px;
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+}
+.title10 {
+  align-self: center;
+  margin-left: 52px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 28px;
+}
+.title11 {
+  font-weight: bold;
+  margin-left: 25px;
+  margin-top: -15px;
+  color: rgb(180, 180, 180);
+}
+.title12 {
+  align-self: center;
+  margin-left: 56px;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 28px;
+  color: rgb(180, 180, 180);
+}
+.title13 {
+  font-weight: normal;
+  margin-left: 25px;
+  margin-top: -15px;
+  color: rgb(180, 180, 180);
+}
+.item6 {
+    color:rgb(76, 7, 76);
     display: flex;
-    background-color:rgb(240, 240, 240);
-    color: rgb(76, 7, 76);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
-    width: 400px;
-    height: 400px;
+    width: 880px;
+    height: 100px;
+    background-color: transparent;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-/* .item5 {
-    display: flex;
-    width: 20%;
-    height: 100px;
-    background-color: blue;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
+} 
+
+
+.search-btn {
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: -200px;
+  background-color: rgb(221, 221, 221);
+  flex-grow: 0;
 }
-.item6 {
-    display: flex;
-    width: 20%;
-    height: 100px;
-    background-color: blue;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-} */
 .purple {
     background-color: purple;
     height: 100%;
     width: 10px;
     border-radius: 10px 0 0 10px;
-    position: relative;
+    /* position: relative; */
 }
 .orange {
-    background-color: orange;
+    background-color: rgb(240, 120, 60);
     height: 100%;
     width: 10px;
     border-radius: 10px 0 0 10px;
-    position: relative;
+    /* position: relative; */
 }
 .blue {
     background-color: rgb(159, 202, 224);
     height: 100%;
     width: 10px;
     border-radius: 10px 0 0 10px;
-    position: relative;
+    /* position: relative; */
 }
 .white {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: white;
-    flex-direction: column-reverse;
     height: 20%;
     width: 100%;
     border-radius: 10px;
-    position: relative;
-}
-.card5 {
-  display: flex;
-  background-color: rgb(240, 240, 240);
-  color: rgb(76, 7, 76);
-  padding: 20px;
-  margin: 20px;
-  border-radius: 15px;
-  width: 300px;
-  height: 400px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    /* position: relative; */
 }
 .white1 {
+  display: flex;
+  align-self: start;
+  flex-wrap: wrap;
   background-color: white;
-  height: 150px;
-  width: 120px;
-  border-radius: 5px;
+  height: 160px;
+  width: 140px;
+  border-radius: 10px;
   
 }
 .white2 {
   display: flex;
+  align-self:flex-end;
   /* align-self: center; */
-  align-items:center ;
-  background-color: white;
+  align-items:center;
+  background-color: rgb(221, 221, 221);
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -169,8 +301,12 @@ body {
   margin-left: 50px;
 }
 .white3 {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   background-color: white;
-  height: 150px;
-  width: 120px;
-  border-radius: 5px;
+  height: 149.5px;
+  width: 129.5px;
+  border-radius: 10px;
+  border: 7px dashed rgb(201, 201, 201)
 }
