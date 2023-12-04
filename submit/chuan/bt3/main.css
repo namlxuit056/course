@@ -1,24 +1,63 @@
 .container {
     display: flex;
     height: 100%;
-    width: 900px;
+    width: 100%;
     background-color: rgb(240, 240, 240);
     flex-direction: row; 
     justify-content:space-between;
     flex-wrap: wrap;
     padding: 20px; 
 }
+.container1 {
+  display: flex;
+  width: 900px;
+  background-color: rgb(248, 248, 248);
+  flex-direction: row; 
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  flex-grow: 4;
+  border-radius: 0px 25px 25px 0px;
+}
+.taskbar1 {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 930px;
+  background-color: rgb(248, 248, 248);
+  flex-shrink: 2;
+  flex-grow: 2;
+}
+.taskbar2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 350px;
+  height: 100%;
+  background-color: transparent;
+  /* flex-shrink: 2; */
+  flex-grow: 2;
+  align-self: flex-start;
+}
 body {
     font-family: Arial, sans-serif;
   }
-  
   .card {
+    margin-top: 50px;
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 13px;
+    background-color: rgb(240, 240, 240);
+  }
+  .card1 {
     background-color: purple;
     color: white;
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    width: 200px;
+    width: 220px;
   }
   .card2 {
     background-color: rgb(159, 202, 224);
@@ -26,7 +65,7 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    width: 200px;
+    width: 220px;
   }
   .card3 {
     background-color: rgb(240, 120, 60);
@@ -34,11 +73,12 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 15px;
-    width: 200px;
+    width: 220px;
+    margin-right: 50px;
   }
   .card4 {
     display: flex;
-    background-color:rgb(240, 240, 240);
+    background-color:rgb(248, 248, 248);
     color: rgb(76, 7, 76);
     padding: 20px;
     margin: 20px;
@@ -52,25 +92,39 @@ body {
   }
   .card5 {
     display: flex;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(248, 248, 248);
     color: rgb(76, 7, 76);
     padding: 20px;
     margin: 20px;
+    margin-right: 3px;
     border-radius: 15px;
-    width: 300px;
-    height: 400px;
+    width: 330px;
+    height: 450px;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
-  .card6{
+  .card6 {
     display: flex;
     background-color: black;
     color: white;
     border-radius: 8px;
-    height: 40px;
-    width: 150px;
+    height: 47px;
+    width: 160px;
     margin-top: 20px;
+    margin-right: -25px;
+    cursor: pointer;
+  }
+  .card7 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 18px;
+    width: 310px;
+    
   }
   .title {
     font-size: 18px;
@@ -79,13 +133,25 @@ body {
     margin-top: 20px;
   }
   
-  .progress-bar {
+  .progress-bar2 {
+    width: 100%;
+    background-color: rgb(84, 121, 139);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .progress-bar3 {
+    width: 100%;
+    background-color: rgb(150, 75, 38);;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .progress-bar1 {
     width: 100%;
     background-color: rgb(62, 3, 62);
     border-radius: 10px;
     margin-top: 10px;
   }
-  
+
   .progress-bar-fill1 {
     height: 10px;
     width: 96%; 
@@ -130,7 +196,8 @@ body {
     position: relative; 
     top: 20px; 
     right: 10px; 
-    left: 180px;  
+    left: 200px;
+    cursor: pointer;  
   }
   
   .dot {
@@ -140,19 +207,26 @@ body {
     background-color: white;
     margin: 3px 0;
   }
+  .dot1 {
+    align-self: end;
+    margin-top: -25px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
 
 .title1 {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 18px;
+  color: rgb(69, 12, 75);
   /* flex-grow: 3; */
 }
 .title2 {
   align-self: center;
-  margin-left: 15px;
-  flex-grow: 2;
+  margin-left: 20px;
+  /* flex-grow: 2; */
 }
 .title3 {
   margin-left: 15px;
@@ -188,11 +262,11 @@ body {
   margin-top: -2px;
   margin-left: 12.5px;
   font-weight: 1000;
-  color: rgb(153, 153, 153);
+  color: rgb(186, 186, 186);
 }
 .title9 {
-  margin-right: 100px;
-  margin-left: -392px;
+  margin-right: 120px;
+  margin-left: -388px;
   margin-top: 50px;
   font-weight: bold;
   color: rgb(180, 180, 180);
@@ -224,6 +298,39 @@ body {
   margin-top: -15px;
   color: rgb(180, 180, 180);
 }
+.title14 {
+  font-size: 25px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+  margin-top: 40px;
+  margin-left: 18px;
+  color: rgb(69, 12, 75);
+}
+.title15 {
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+  margin-left: 18px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.title16 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 18px;
+}
+.title17 {
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+  margin-left: 18px;
+  margin-top: -20px;
+}
+.title18 {
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+  margin-left: 18px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
 .item6 {
     color:rgb(76, 7, 76);
     display: flex;
@@ -233,18 +340,90 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-} 
-
-
-.search-btn {
+}
+.edit-btn {
+  margin-left: 35px;
+  margin-top: 40px;
   height: 40px;
   width: 40px;
   border: 0px;
   border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+} 
+.home-btn {
+  padding: 5px;
+  margin-left: 23px;
+  margin-bottom: 25px;
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: 35px;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+.table-btn {
+  margin-left: 23px;
+  margin-bottom: 25px;
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+.file-btn {
+  margin-left: 23px;
+  margin-bottom: 25px;
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+.user-btn {
+  margin-left: 23px;
+  margin-bottom: 35px;
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer
+}
+.gear-btn {
+  margin-top: 340px;
+  margin-left: 36px;
+  height: 55px;
+  width: 55px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer
+}
+.bell-btn {
+  height: 46px;
+  width: 46px;
+  border: 0px;
+  border-radius: 10px;
+  margin-top: -37px;
+  align-self: flex-end;
+  margin-right: 50px;
+  cursor: pointer;
+  background-color: white;
+}
+.search-btn {
+  height: 46px;
+  width: 46px;
+  border: 0px;
+  border-radius: 10px;
   margin-top: 20px;
   margin-right: -200px;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(240, 240, 240);
   flex-grow: 0;
+  cursor: pointer;
 }
 .purple {
     background-color: purple;
@@ -269,6 +448,7 @@ body {
 }
 .white {
     display: flex;
+    margin-bottom: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: white;
@@ -279,6 +459,7 @@ body {
 }
 .white1 {
   display: flex;
+  margin-bottom: 20px;
   align-self: start;
   flex-wrap: wrap;
   background-color: white;
@@ -292,13 +473,13 @@ body {
   align-self:flex-end;
   /* align-self: center; */
   align-items:center;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(240, 240, 240);
   height: 35px;
   width: 35px;
   border-radius: 50%;
   margin-top: 10px;
   margin-bottom: 15px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .white3 {
   display: flex;
@@ -308,5 +489,31 @@ body {
   height: 149.5px;
   width: 129.5px;
   border-radius: 10px;
-  border: 7px dashed rgb(201, 201, 201)
+  border: 7px dashed rgb(220, 220, 220);
+  cursor: pointer;
+}
+.white4 {
+  display: flex;
+  align-self:flex-end;
+  /* align-self: center; */
+  align-items:center;
+  background-color: rgb(240, 240, 240);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+.checkbox1 {
+  margin-left: 210px;
+}
+.checkbox2 {
+  margin-left: 250px;
+}
+.checkbox3 {
+  margin-left: 191px;
+}
+.checkbox4 {
+  margin-left: 249px;
 }
