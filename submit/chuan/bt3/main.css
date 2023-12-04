@@ -480,6 +480,7 @@ body {
   margin-top: 10px;
   margin-bottom: 15px;
   /* margin-left: 50px; */
+  cursor: pointer;
 }
 .white3 {
   display: flex;
@@ -504,6 +505,7 @@ body {
   margin-top: 10px;
   margin-bottom: 15px;
   margin-right: 25px;
+  cursor: pointer;
 }
 .checkbox1 {
   margin-left: 210px;
